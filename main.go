@@ -24,8 +24,7 @@ type get_points_response struct {
 
 // Response for the process response request
 type process_recepits_reponse struct {
-	Id     string `json:"id"`
-	Points int    `json:"points"`
+	Id string `json:"id"`
 }
 
 // Recepit items data in the process recepits request object
@@ -115,8 +114,7 @@ func ProcessRecepitsHandler(w http.ResponseWriter, r *http.Request) {
 
 	// Create response object
 	var response = process_recepits_reponse{
-		Id:     id,
-		Points: points,
+		Id: id,
 	}
 
 	// Write response
